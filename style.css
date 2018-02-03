@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+
+body {
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+
+}
+
+
+.logo {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    background-image: url(pic/militari_fon_pyatna_tekstura_50574_2560x1600.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.point {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    background-color: red;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+
+.graficlogo {
+    height: 150px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.lang {
+    width: 100%;
+    height: 60px;
+    background-color: #1C1C1C;
+}
+
+
+.minilogo {
+    width: 70px;
+}
+
+.dicon {
+    display: inline-block;
+}
+
+.iconlogo {
+    display: none;
+}
+
+.country {
+    width: 75px;
+    height: 50px;
+}
+
+#nav {
+    position: fixed;
+    z-index: 10;
+}
+
+header nav {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+}
+
+.topnav {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 30px;
+    text-align: center;
+}
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 16px;
+
+}
+
+.topnav a:hover {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 16px;
+    border: solid 1px;
+    border-bottom: solid 3px;
+    border-radius: 2px;
+}
+
+
+.navfooter {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 100px;
+    width: 102px;
+}
+
+.navfooter a {
+    color: wheat;
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.navfooter_en {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 100px;
+    width: 120px;
+}
+
+.navfooter_en a {
+    color: wheat;
+    text-decoration: none;
+    text-align: left;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.navfooter_en a:hover {
+    color: wheat;
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+
+.navfooter a:hover {
+    color: wheat;
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+
+
+main {
+    height: 100%;
+    margin: auto;
+    margin-top: 237px;
+}
+
+.video {
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-image: url(pic/militari_fon_pyatna_tekstura_50574_2560x1600.jpg);
+
+}
+
+
+.footermenu {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.social a img {
+    width: 50px;
+}
+
+.discleimer p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: wheat;
+    text-align: center;
+
+}
+
+
+#up {
+    position: fixed;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #333;
+    font-size: 40px;
+    bottom: 100px;
+    margin-left: 85%;
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.news {
+    border: solid 1px;
+    border-bottom: solid 3px;
+}
+
+.news-itm {
+    width: 650px;
+    margin: 0 auto;
+    padding: 3px;
+    border-radius: 20px;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 16px 264px 16px;
+
+}
+
+.news-img1 {
+    border-radius: 10px;
+}
+
+.news-body {
+    width: 100%;
+}
+
+.news-main {
+    width: 640px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.news-head {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+
+
+.loaderArea {
+    background-image: url(pic/militari_fon_pyatna_tekstura_50574_2560x1600.jpg);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+.loader {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 8px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.loader:before {
+    animation: animate 2s linear;
+}
+
+.slider {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    background-color: #333;
+    text-align: center;
+    padding-top: 10px;
+    color: azure;
+    justify-content: center;
+    margin-right: 8%;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-size: auto;
+    border-radius: 30%;
+
+}
+
+.gallery {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.photo-imt img {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.photo-imt {
+    width: 100%;
+    opacity: 0.8;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
+    transition: all 0.6s;
+
+}
+
+.photo-imt:hover {
+    opacity: 1;
+    
+
+}
+
+#main {
+    margin: 0;
+}
+
+#container {
+    margin: 0;
+}
+
+.wow {
+    margin: 0;
+}
+
+/* 
+Первичные стили:
+С ними работает слайд шоу
+*/
+
+#slides {
+    width: 1280px;
+    box-sizing: border-box;
+    max-width: 100%;
+    position: relative;
+    height: 720px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    margin: auto;
+}
+
+#pictures {
+    display: none;
+    margin-bottom: 40px;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1280px;
+    height: 720px;
+    opacity: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+
+.slide:nth-of-type(1) {
+    background-image: url(pic/gallery/1.jpg);
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(pic/gallery/2.jpg);
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(pic/gallery/3.jpg);
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(pic/gallery/4.jpg);
+}
+
+.slide:nth-of-type(5) {
+    background-image: url(pic/gallery/5.jpg);
+}
+
+.slide:nth-of-type(6) {
+    background-image: url(pic/gallery/6.jpg);
+}
+
+.slide:nth-of-type(7) {
+    background-image: url(pic/gallery/7.jpg);
+}
+
+.slide:nth-of-type(8) {
+    background-image: url(pic/gallery/8.jpg);
+}
+
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+
+
+
+
+.bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+}
+
+
+
+.loader:after {
+    animation: animate2 2s linear;
+}
+
+
+#map {
+    width: 500px;
+    height: 300px;
+    text-align: right;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+
+.create {
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    padding-right: 40px;
+}
+
+.create-title{
+    margin-top: 20px;
+}
+
+.create-itm{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+}
+
+
+.case{
+    font-size: 20px;
+}
+
+.create-text{
+    padding-left: 50px;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+
+.case-itm{
+    width: 40%;
+    height: 830px;
+    padding: 70px;
+    display: inline-block;
+}
+
+.case-text{
+    float: left;
+    margin-left: 40px;    
+}
+
+.case-img{
+    float: left;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0) skew(0);
+    }
+
+    100% {
+        transform: rotate(-180deg) skew(-360deg);
+    }
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0) skew(0);
+    }
+
+    100% {
+        transform: rotate(180deg) skew(360deg);
+    }
+}
+
+
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        -ms-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+
+    80% {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-imt {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 1290px) {
+
+    #slides {
+        width: 720px;
+        height: 360x;
+        margin: 0 auto;
+    }
+
+
+    .slide {
+        width: 720px;
+        height: 360px;
+        background-size: 720px;
+    }
+
+}

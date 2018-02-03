@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PLAYERUNKNOWN'S BATTLEGROUNDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="preloader" class="loaderArea">
+        <div class="loader"></div>
+    </div>
+    <audio id="audio_1">
+        <source src="audio/PUBG_-_Main_Menu_New.mp3" type="audio/mp3" />
+    </audio>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="graficlogo" src="pic/visual_main_title.png" alt="Logo"></a>
+        </div>
+
+        <nav id="nav">
+            <div class="topnav" id="topnav">
+                <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="pic/mini-logo.png" alt=""></a>
+                <a href="html/news.html">НОВОСТИ</a>
+                <a href="html/create.html">СОЗДАНИЕ ИГРЫ</a>
+                <a href="html/case.html">КЕЙСЫ</a>
+                <a href="html/gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <video id="video" class="video" src="video/Sequence%2002.mp4"></video>
+    </main>
+
+    <footer>
+        <div class="footermenu">
+            <div class="navfooter">
+                <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="pic/mini-logo.png" alt=""></a>
+                <a href="html/news.html">НОВОСТИ</a>
+                <a href="html/create.html">СОЗДАНИЕ ИГРЫ</a>
+                <a href="html/case.html">КЕЙСЫ</a>
+                <a href="html/gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href=""><img src="pic/socialicon/em.png" alt=""></a>
+            <a href=""><img src="pic/socialicon/f.png" alt=""></a>
+            <a href=""><img src="pic/socialicon/ok.png" alt=""></a>
+            <a href=""><img src="pic/socialicon/vk.png" alt=""></a>
+        </div>
+        <div id="map"></div>
+        <div class="discleimer">
+            <p>COPYRIGHT ©2017 LauEn CORPORATION. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+        </div>
+        <div id="up">Up</div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: 55.911809,
+                lng: 37.718889
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOdRR5HgbLOSvUNiT6UXnLewARGjjBwlM&callback=initMap">
+
+
+    </script>
+</body>
+
+</html>

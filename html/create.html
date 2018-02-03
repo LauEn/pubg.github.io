@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>PLAYERUNKNOWN'S BATTLEGROUNDS</title>
+        <link rel="stylesheet" href="../style.css">
+
+
+    </head>
+
+    <body>
+
+        <div  id="preloader" class="loaderArea">
+            <div class="loader"></div>
+        </div>
+        <audio id="audio_1">
+            <source src="audio/PUBG_-_Main_Menu_New.mp3" type="audio/mp3" />
+        </audio>
+
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img class="graficlogo" src="../pic/visual_main_title.png" alt="Logo"></a>
+            </div>
+
+            <nav id="nav">
+                <div class="topnav" id="topnav">
+                    <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="pic/mini-logo.png" alt=""></a>
+                    <a href="news.html">НОВОСТИ</a>
+                    <a class="news" href="create.html">СОЗДАНИЕ ИГРЫ</a>
+                    <a href="case.html">КЕЙСЫ</a>
+                    <a href="gallery.html">ГАЛЕРЕЯ</a>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="create">
+            <div class="create-itm">
+                <div class="create-title">
+                    О разроботчиках
+                </div>
+                <div class="create-text">
+                    Создателями игры является корейская компания Bluehole. Изначально концепция игры была придумана ведущим дизайнером Брендан Грин под псевдонимом «PlayerUnknown» работал моддером над ArmA 2, и в дальнеёшем создал свой собственныйй режим «Battle Royale». Вдохнавлённый комерческим успехом других игр в жанре «Battle Royale» принял решение собственную игру в режиме «Battle Royale».
+                    Дистрибьютацией игры в России занимается Mail.Ru Group. 
+
+                </div>
+            </div>
+            <div class="create-itm">
+                <div class="create-title">
+                    История создания 
+                </div>
+                <div class="create-text">
+                    Игры была чуть лучше своих собратьев в этом же жанре игры. Первой игры в жанре «Battle Royale» была Arma, в которой было большое колличество багов и глюков. Улучшенной версии Arma была  H1Z1: King of the Kill, но она тоже была с плохой физикой и анимацией персонажа. Обе эти вде игры были достаточно популярны и разработчикам принесла миллионы долларов, а в итоге эти две игры забросили. Несмортя на то что игры уже собрала более $100 млн долларов, разработчики не собираются оставлять игру, а продолжают исправлять багги, которых осталось ещё большое колличество.
+
+                </div>
+            </div>
+            <div class="create-itm">
+                <div class="create-title">
+                    Геймлей
+                </div>
+                <div class="create-text">
+                    В игре до 100 игроков, которые парашютируются на остров, после чего ищут снаряжение и оружие, чтобы убить других участников и при этом самим остаться в живых. Доступная безопасная зона на внутриигровой карте со временем начинает уменьшаться, делая доступное пространство более тесным, чтобы сталкивать их между собой. Последний выживший игрок или команда побеждает в раунде. Из-за того что игра имеет большой открытый мир в ней можно столкнутся с большим колличеством багов. Именно по этому игра долгое время не выходила из режима раннего доступа.
+
+                </div>
+            </div>
+            <div class="create-itm">
+                <div class="create-title">
+                    Успех игры
+                </div>
+                <div class="create-text">
+                    Игра вышла в режим раннего доступа в марте 2017 года. Но уже 8 сентября онлайн игры превысил миллион человек. Пиковое количество игроков достигло более 2 миллионов человек к концу года, что сделало её одной из самых популярных игр в Steam. Игры вышла из раннего доступа 21 декабря 2017 года. Сейчас проданно более 19 миллионов копий игры.
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footermenu">
+                <div class="navfooter">
+                    <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="pic/mini-logo.png" alt=""></a>
+                    <a href="news.html">НОВОСТИ</a>
+                    <a href="create.html">СОЗДАНИЕ ИГРЫ</a>
+                    <a href="case.html">КЕЙСЫ</a>
+                    <a href="gallery.html">ГАЛЕРЕЯ</a>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href=""><img src="../pic/socialicon/em.png" alt=""></a>
+                <a href=""><img src="../pic/socialicon/f.png" alt=""></a>
+                <a href=""><img src="../pic/socialicon/ok.png" alt=""></a>
+                <a href=""><img src="../pic/socialicon/vk.png" alt=""></a>
+            </div>
+            <div id="map"></div>
+            <div id="ligth1" class="discleimer">
+                <p>COPYRIGHT ©2017 LauEn CORPORATION. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+            </div>
+        </footer>
+
+
+        <script src="../script.js"></script>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: 55.911809,
+                    lng: 37.718889
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOdRR5HgbLOSvUNiT6UXnLewARGjjBwlM&callback=initMap">
+
+
+        </script>
+    </body>
+
+</html>

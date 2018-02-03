@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PLAYERUNKNOWN'S BATTLEGROUNDS</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div  id="preloader" class="loaderArea">
+        <div class="loader"></div>
+    </div>
+    <audio id="audio_1">
+            <source src="audio/PUBG_-_Main_Menu_New.mp3" type="audio/mp3" />
+        </audio>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img class="graficlogo" src="../pic/visual_main_title.png" alt="Logo"></a>
+        </div>
+
+        <nav id="nav">
+            <div class="topnav" id="topnav">
+                <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="../pic/mini-logo.png" alt=""></a>
+                <a href="news.html">НОВОСТИ</a>
+                <a href="create.html">СОЗДАНИЕ ИГРЫ</a>
+                <a href="case.html">КЕЙСЫ</a>
+                <a class="news" href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="project">
+        <div id="slider" class="slider">Включить слайдер</div>
+        <div id="pictures">
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+
+
+        <div id="gallery" class="gallery">
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/1.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/2.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/3.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/4.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/5.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/6.jpg" alt=""></div>
+                    </section>
+
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/7.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <div id="container">
+                <div id="main">
+                    <section class="section--blue wow bounceInLeft">
+                        <div class="photo-imt"><img src="../pic/gallery/8.jpg" alt=""></div>
+                    </section>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footermenu">
+            <div class="navfooter">
+                <a id="icon" href="index.html" class="iconlogo"><img class="minilogo" src="pic/mini-logo.png" alt=""></a>
+                <a href="news.html">НОВОСТИ</a>
+                <a href="create.html">СОЗДАНИЕ ИГРЫ</a>
+                <a href="case.html">КЕЙСЫ</a>
+                <a href="gallery.html">ГАЛЕРЕЯ</a>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href=""><img src="../pic/socialicon/em.png" alt=""></a>
+            <a href=""><img src="../pic/socialicon/f.png" alt=""></a>
+            <a href=""><img src="../pic/socialicon/ok.png" alt=""></a>
+            <a href=""><img src="../pic/socialicon/vk.png" alt=""></a>
+        </div>
+        <div id="map"></div>
+        <div class="discleimer">
+            <p>COPYRIGHT ©2017 LauEn CORPORATION. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+        </div>
+        <div id="up">Up</div>
+
+    </footer>
+
+    <script src="../dist/wow.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: 55.911809,
+                lng: 37.718889
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        };
+
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOdRR5HgbLOSvUNiT6UXnLewARGjjBwlM&callback=initMap">
+    </script>
+</body>
+
+</html>
